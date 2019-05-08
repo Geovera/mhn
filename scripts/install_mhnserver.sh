@@ -174,5 +174,7 @@ EOF
 touch $MHN_HOME/server/mhn.log
 chown $NGINXUG -R $MHN_HOME/server/*
 
+chmod 777 /var/log/mhn/mhn.log
+
 supervisorctl update
 /etc/init.d/nginx restart
